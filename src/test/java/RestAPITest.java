@@ -29,10 +29,9 @@ public class RestAPITest {
         System.out.println("등록일:" + user.getRegDate() + "," + user.getUserId() + "," + user.getUname());
     }
 
-    /*
     @Test
     public void testGetUsers() {
-        String url = "http://localhost:9090/user";
+        String url = "http://localhost:8080/user";
         ResponseEntity<Map<String, List<User>>> result = restTemplate.
                 exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<Map<String, List<User>>>() {
                 });
@@ -43,5 +42,4 @@ public class RestAPITest {
             System.out.println(usr.getUname());
         }
     }
-    */
 }
